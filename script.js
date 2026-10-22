@@ -1,0 +1,1 @@
+const btn=document.getElementById('lang');if(btn){let lang='en';btn.addEventListener('click',()=>{lang=lang==='en'?'id':'en';document.documentElement.lang=lang;document.querySelectorAll('[data-en][data-id]').forEach(el=>el.textContent=el.dataset[lang]);btn.textContent=lang==='en'?'ID':'EN';});}const y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();
